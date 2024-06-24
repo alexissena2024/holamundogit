@@ -1,0 +1,56 @@
+/* PASO 1 QUITAR ESTILO DE LA VIÑETA */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+
+}
+
+/* PASO2 QUITAR EL SUBRAYADO */
+nav li a{
+text-decoration: none;
+background-color: black;
+color: white;
+padding: 10px;
+display: block;
+width: 95px;
+text-align: center;
+border-radius: 15px;
+}
+
+/* pso3 modificar el ancho de la barra menu */
+nav{
+    width: 500px;
+    margin: auto;
+}
+
+/* paso4 acomodar los LI INLINE */
+nav ul li{
+    float:left
+
+}
+
+/* paso5 usar pseudocodigo ahover PARA CREAR ANIMACION */
+nav li a:hover{
+    background-color: darkgray;
+}
+
+/* paso7 aplicar poscion ABSOLUTA AL SUBMENU */
+
+.submenup{
+    position: absolute;
+    display: none;  /* OCULTAR EL SUBMENU */
+
+}
+/* paso8 modificar la prppiedad float para el submenu */
+.subm{
+    float: none;
+}
+
+/* PASO9 MOSTRA LOS SUBMENU AL MOMENTO DE PSAR EL MOUSE */
+
+nav li:hover>ul{
+    display: block;
+}
