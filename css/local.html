@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="elements">
+
+
+    </div>
+    <script>
+    NombreArreglo=[{
+       name:"hector",
+       age:34
+    },{
+        name: "francisco",
+        age:40
+    }];   
+    // localStorage.setItem("lista",JSON.stringify(NombreArreglo))
+    almacenar=JSON.parse(localStorage.getItem("lista"))
+//   console.log(almacenar)
+   almacenar.forEach(element => {
+    let elements=document.getElementById("elements")
+   let div=document.createElement("li")
+   div.innerHTML=element.name + " " + element.age
+    elements.appendChild(div)
+
+});
+ </script>
+</body>
+</html>
