@@ -1,0 +1,9 @@
+{
+    "nombre":"cristiano",
+    "apellidos": "roldaño",
+    "edad":36,
+    "equipos":["Soportin Club",
+               "manchester",
+               "real madrid",
+               "Juventus"]
+}
